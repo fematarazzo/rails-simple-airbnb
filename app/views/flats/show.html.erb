@@ -1,0 +1,49 @@
+<div>
+  <img class='img-fluid w-100' src="https://source.unsplash.com/random/?house" alt="A house"/>
+  <div class="container d-flex justify-content-around show">
+
+    <div>
+      <div class="card text-dark bg-light mb-3" style="max-width: 50rem;">
+        <div class="card-body">
+          <h2 class="card-title"> <%= @flat.name %></h2>
+          <h6 class="card-text"> <%= @flat.address %></h6>
+        </div>
+      </div>
+
+      <div class="card text-dark bg-light mb-3" style="max-width: 50rem;">
+        <div class="card-body">
+          <h3 class="card-title">A bit more about this flat...</h3>
+          <p class="card-text"> <%= @flat.description %></p>
+        </div>
+      </div>
+
+      <div class="card text-dark bg-light mb-3" style="max-width: 50rem;">
+        <div class="card-body">
+          <h3 class="card-title">Details</h3>
+          <div class="d-flex text-right">
+            <p class="card-text"><i class="fas fa-user-friends mr-1"></i> <%= @flat.number_of_guests %> </p>
+            <p class="card-text ml-3"><i class="fas fa-dollar-sign mr-1"></i> <%= @flat.price_per_night %> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-dark bg-light mb-3 ml-3" style="max-width: 30rem;">
+      <div class="card-body">
+        <h4>Book this place!</h4>
+
+        <div class="input-group input-group-default mb-2">
+          <span class="input-group-text" id="inputGroup-sizing-default">From:</span>
+          <input type="text" class="form-control" placeholder="01/02/2020" aria-label="01/02/2020" aria-describedby="inputGroup-sizing-default">
+        </div>
+          <div class="input-group input-group-default mb-2">
+          <span class="input-group-text" id="inputGroup-sizing-default">To:</span>
+          <input type="text" class="form-control" placeholder="02/03/2020" aria-label="02/03/2020" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <button type="button" class="btn btn-secondary w-100">Book now</button>
+      </div>
+    </div>
+  </div>
+</div>
+

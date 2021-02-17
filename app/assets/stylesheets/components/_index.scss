@@ -1,0 +1,21 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "navbar";
+@import "card";
+
+.yellow {
+  color: #ffc52e;
+}
+
+.yellow:hover {
+  color: #c49725;
+}
+
+.red {
+  color: #e15845;
+}
+
+.red:hover {
+ color: #9e3d31;
+}
